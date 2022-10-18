@@ -1,0 +1,109 @@
+body {
+    width: 350px;
+    margin: 4% auto;
+    font-family: 'Gill Sans','Trebuchet MS', sans-serif;
+    letter-spacing: 5px;
+    font-size: 1.8rem;
+    user-select: none;
+    background: #727272;
+    transition: 0.6s all ease-in-out
+}
+.calculator {
+    padding: 20px;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    background: #000000;
+    border: 5px solid rgb(68, 68, 68);
+}
+.input {
+    background: rgba(206, 206, 206, 0.568);
+    color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.233);
+    border-radius: 20px;
+    height: 50px;
+    padding-right: 15px;
+    padding-top: 200px;
+    text-align: right;
+    margin-right: 6px;
+    font-size: 2.5rem;
+    overflow-x: auto;
+    transition: all .2s ease-in-out;
+}
+.input:hover {
+    border: 1px solid #bbb;
+    -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.operators div {
+    display: inline-block;
+    border: 1px solid #bbb;
+    border-radius: 50%;
+    width: 38px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 4px 10px 0;
+    cursor: pointer;
+    background-color: rgb(255, 166, 0);
+    transition: .2s ease-in-out all;
+}
+.operators div:hover {
+    background-color: rgb(177, 177, 177);
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: #aaa;
+    transform: scale(1.05);
+}
+.operators div:active {
+    font-weight: bolder;
+}
+.leftPanel {
+    display: inline-block;
+}
+.numbers div {
+    display: inline-block;
+    border-radius: 50%;
+    width: 40px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 4px 10px 0;
+    cursor: pointer;
+    background-color: #444444;
+    color: #fff;
+    transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+.numbers div:hover {
+    background-color: #7c7c7c;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: #bbb;
+    transform: scale(1.05);
+}
+.numbers div:active {
+    font-weight: bolder;
+}
+.equal {
+    display: inline-block;
+    border-radius: 20px;
+    width: 13%;
+    text-align: center;
+    padding: 120px 10px;
+    margin: 10px 6px 10px 0;
+    vertical-align: top;
+    cursor: pointer;
+    color: #FFF;
+    background-color: rgb(255, 166, 0);
+    transition: all .2s ease-in-out;
+}
+.equal:hover {
+    background-color: #1bf55cd5;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.equal:active {
+    font-weight: bolder;
+}
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}

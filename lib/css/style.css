@@ -103,7 +103,7 @@ input[type=checkbox] {
     .menu li:hover {
         display: inline-block;
         background-color: #2e2e2e;
-        transition: 0.3s ease;
+        transition: 0.3s ease-in-out;
     }
     .menu li+li {
         margin-top: 12px;
