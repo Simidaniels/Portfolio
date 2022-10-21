@@ -103,6 +103,11 @@ body {
 .equal:active {
     font-weight: bolder;
 }
+@media (max-width: 500px) {
+    .input {
+        padding-top: 180px;
+    }
+}
 ::-webkit-scrollbar{
     width: 0px;
     height: 0px;

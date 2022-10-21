@@ -423,8 +423,7 @@ body{
     top: 3px;
     background-color: #fff;
 }
-
-@media (max-width: 550px) {
+@media(max-width:767px) {
     .nav-wrapper {
         position: absolute;
         padding: 0;
@@ -594,7 +593,6 @@ body{
     .footer-cols ul {
         width: 30px;
         margin: 0;
-        line-height: ;
     }
     .footer-cols ul li a {
         font-size: 4px;
