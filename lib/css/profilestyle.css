@@ -423,7 +423,22 @@ body{
     top: 3px;
     background-color: #fff;
 }
-@media(max-width:767px) {
+@media(max-width:620px) {
+    .toggler-wrapper .toggler-slider {
+        position: absolute;
+        left: 28px;
+        top: 10px;
+        width: 18px;
+        height: 12px;
+        
+    }
+    .toggler-wrapper.style-1 .toggler-knob {
+        width: calc(12px - 6px);
+        height: calc(12px - 6px);
+    }
+    .toggler-wrapper.style-1 input[type="checkbox"]:checked+.toggler-slider .toggler-knob {
+        left: calc(170% - 19px - 3px);
+    }
     .nav-wrapper {
         position: absolute;
         padding: 0;
