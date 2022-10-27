@@ -13,7 +13,6 @@ body{
     width: auto;
     margin: 0 10px;
     position: relative;
-
 }
 .nav-wrapper{
     align-items: center;
@@ -197,19 +196,20 @@ body{
 }
 .cv button{
     background-color: rgb(241, 169, 0);
-    border-radius: 20px;
+    border-radius: 14px;
     text-align: center;
-    padding: 8px;
+    padding: 10px;
     margin-top: 16px;
     border: none;
 }
 .cv a{
     text-decoration: none;
-    color: #fff;
-    padding: 10px;
-    font-size: 18px;
-    font-weight: 500;
+    color: #fff;    
+}
+.cv a span {
     font-family: sans-serif;
+    font-size: 16px;
+    padding: 0 6px;
 }
 .cv button:hover{
     transform: scale(1.1);
@@ -250,7 +250,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 30px;
+    padding: 20px;
 }
 .learn button{
     padding: 10px;
@@ -371,10 +371,8 @@ body{
 .foot p {
 	margin-bottom: 1.5rem;
 }
-.foot .footer-cols{
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-gap: 2rem;
+.foot .footer-cols ul{
+	display: flex;
 }
 .foot li{
 	line-height: 1.9;
@@ -423,14 +421,13 @@ body{
     top: 3px;
     background-color: #fff;
 }
-@media(max-width:620px) {
+@media(max-width:630px) {
     .toggler-wrapper .toggler-slider {
         position: absolute;
         left: 28px;
         top: 10px;
         width: 18px;
-        height: 12px;
-        
+        height: 12px;  
     }
     .toggler-wrapper.style-1 .toggler-knob {
         width: calc(12px - 6px);
@@ -461,7 +458,9 @@ body{
         text-decoration: underline;
     }
     .content {
-        margin: 55px 0;
+        margin-left: 0;
+        margin-top: 52px;
+        margin-bottom: 10px;
     }
     .myname {
         font-size: 8px;
@@ -498,10 +497,11 @@ body{
     }
     .hire button {
         margin: 0;
-        width: 10vh;
+        width: 8vh;
         padding: 2px;
         font-size: 6px;
-        font-weight: 100;
+        font-weight: 500;
+        border-radius: 4px;
     }
     .page-content {
         display: block;
@@ -510,7 +510,7 @@ body{
     }
     .image img {
         margin: 0;
-        width: 5em;
+        width: 4em;
     }
     .social-media {
         display: block;
@@ -518,10 +518,11 @@ body{
         padding: 0;
     }
     .social-media button {
-        margin: 0;
+        margin: 3px 10px;
+        padding: 2px;
+        border-radius: 2px;
         box-shadow: none;
-        padding: 0 2px;
-        display: block;
+        display: grid;
     }
     .social-media button a {
         font-size: 4px;
@@ -533,83 +534,89 @@ body{
         display: block;
     }
     .services-container {
-        display: block;
         margin: 0;
-        padding: 0;
     }
     .services {
-        margin: 10px 0;
+        margin-top: 6px;
     }
     .king {
-        font-size: 5px;
+        font-size: 6px;
     }
     .services small {
         display: inline-block;
         font-size: 3px;
-        margin: 2px 0;
-        line-height: 6px;
+        width: 16vw;
+        margin: 0;
+        line-height: 5px;
     }
     .cv button {
-        margin: 0;
-        padding: 0;
-        width: 8vh;
-        border: 1px solid rgba(199, 199, 199, 0.856);
+        margin-top: 0;
+        margin-bottom: 6px;
+        padding: 0 2px;
+        border-radius: 1px;
+        box-shadow: none;
+        display: inline-block;
     }
-    .cv button a {
-        margin: 0;
-        padding: 0;
+    .cv a {
         font-size: 4px;
     }
+    .cv a span {
+        font-size: 4px;
+        padding: 0 2px;
+    }
     .web-dev {
-        width: 80px;
+        width: 78px;
         margin: 0;
     }
     .web-dev img {
-        display: none;
+        width: 4vw;
     }
     .head {
-        font-size: 8px;
+        font-size: 5px;
+        padding: 2px;
     }
     .note {
-        font-size: 4px;
+        font-size: 3px;
+        line-height: 5px; 
+    }
+    .learn {
+        padding: 2px;
     }
     .learn button{
-        margin: 0;
+        border-radius: 3px;
         padding: 0;
-        width: 24px;
     }
     .learn button a {
-        font-size: 4px;
+        font-size: 5px;
+        padding: 0;
+    }
+    .learn button:hover {
+        transform: scale(0.7);
     }
     .soft-dev {
-        margin: 0;
+        margin: 4px 0;
+    }
+    .web-dev {
+        margin: 4px 0;
     }
     .footer {
-        margin: 20px 0;
-    }
-    .footer-wrapper {
-        float: left;
-    }
-    .footer-wrapper p{
-        font-size: 6px;
-    }
-    .footer-wrapper label {
-        font-size: 4px;
-    }
-    .card {
-        margin: 0px;
-        height: 120px;
+        display: none;
     }
     .foot {
-        margin: 0;
+        margin: 15px 0;
         display: inline-block;
         font-size: 4px;
     }
+    .foot p {
+        margin: 6px 0;
+    }
     .footer-cols ul {
-        width: 30px;
-        margin: 0;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
     }
     .footer-cols ul li a {
-        font-size: 4px;
+        font-size: 3px;
     }
 }
