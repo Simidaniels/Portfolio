@@ -372,7 +372,9 @@ body{
 	margin-bottom: 1.5rem;
 }
 .foot .footer-cols ul{
-	display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
 }
 .foot li{
 	line-height: 1.9;
