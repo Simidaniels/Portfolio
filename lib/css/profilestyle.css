@@ -423,7 +423,98 @@ body{
     top: 3px;
     background-color: #fff;
 }
-@media(max-width:630px) {
+
+
+
+
+@media(max-width: 1184px) {
+    .toggler-wrapper .toggler-slider {
+        position: absolute;
+        left: 80px;
+        top: 10px;
+        width: 18px;
+        height: 12px;
+    }
+    .toggler-wrapper.style-1 .toggler-knob {
+        width: calc(12px - 6px);
+        height: calc(12px - 6px);
+    }
+    .toggler-wrapper.style-1 input[type="checkbox"]:checked+.toggler-slider .toggler-knob {
+        left: calc(170% - 19px - 3px);
+    }
+    .nav-wrapper {
+        position: absolute;
+        padding: 0;
+        margin: 20px 0;
+    }
+    .nav-wrapper label {
+        font-size: 12px;
+        margin: 0 10px;
+    }
+    /*
+    .nav-wrapper button {
+
+    }
+    .nav-wrapper button a {
+        
+    }
+    */
+    .content {
+        margin: 120px 0;
+    }
+    .myname {
+        font-size: 12px;
+    }
+    .myname small {
+        font-size:12px;
+    }
+    .about {
+        font-size: 6px;
+    }
+    .about a {
+        font-size: 6px;
+    }
+    .socials label {
+        font-size: 9px;
+        margin-top: 6px;
+    }
+    .social-icons {
+        padding: 1px;
+    }
+    .social-icons a {
+        font-size: 5px;
+        padding: 5px;
+        color: #fff;
+    }
+    .insta {
+        background: linear-gradient(rgb(252, 67, 67), rgb(39, 39, 255));
+    }
+    .tweet {
+        background: linear-gradient(rgba(65, 65, 255, 0.938), rgb(71, 71, 255));
+    }
+    .pinterest {
+        background: linear-gradient(#f00024, #ff2747);
+    }
+    .hire button {
+        margin: 0;
+        width: 8vh;
+        padding: 2px;
+        font-size: 6px;
+        font-weight: 500;
+        border-radius: 4px;
+    }
+    .image img {
+        width: 6em;
+    }
+}
+
+
+
+
+
+
+
+@media(max-width: 700px) {
     .toggler-wrapper .toggler-slider {
         position: absolute;
         left: 28px;
