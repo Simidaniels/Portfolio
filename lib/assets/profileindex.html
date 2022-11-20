@@ -5,194 +5,280 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=6.0">
     <title>My Profile</title>
+    <link rel="website icon" type="png" href="../images/cityboy.png">
     <link rel="stylesheet" href="../css/profilestyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="full-page">
-        
-        <div class="nav-wrapper">
-            <div>
-                <label class="toggler-wrapper style-1">
-                    <input type="checkbox" id="theme-switcher">
-                    <div class="toggler-slider">
-                        <div class="toggler-knob"></div>
-                    </div>
-                </label>
-            </div>
 
-            <label>
-                SimiDaniels
-                    <button class="con"><a href="https://www.google.com">My Company</a></button>
-            </label>
-        </div>
-        
-        <div class="page-content">
-            <div class="content">
-                <div class="intro">
-                    <div class="myname">
-                        Hey, I'm Daniel Adepitan
-                        <small>Junior Software Engineer<i class="fa fa-laptop"></i></small>
-                    </div>
-                    <div class="about">
-                        <p>Founder and owner of <a href="##">cyeBa.r</a>,
+    <nav class="navbar">
+        <div class="logo">SimiDaniels</div>
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Portfolio">My Company</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <a name="header"></a>
+    <div class="bg-overlay">
+    <div class="header-content-wrapper">
+        <div class="content-container">
+            <div class="intro">
+                <div class="full-name status">
+                    <h2>Hey, I'm Daniel Adepitan</h2>
+                    <small>Junior Software Engineer <i class="fa fa-laptop"></i></small>
+                    <p class="about">Founder and owner of <a href="##cyeBa.r">cyeBa.r</a>,
                         for web, mobile and software development company.</p>
-                    </div>
-                </div>
-
-                <div class="socials">
-                    <label>Check Out My Socials</label>
-                        <div class="social-icons">
-                            <a href="https://www.instagram.com" class="insta" target="_blank"><i class="fa fa-instagram"></i></a>
-                            <a href="https://www.twitter.com" class="tweet" target="_blank"><i class="fa fa-twitter"></i></a>
-                            <a href="https://www.pinterest.com" class="pinterest" target="_blank"><i class="fa fa-pinterest"></i></a>
-                        </div>
-                </div>
-                <div class="hire">
-                    <a href="##"><button>Hire Me</button></a>
+                    <p>I'm responsible for all of my
+                    company's web, mobile and software development needs.</p>
                 </div>
             </div>
-
-            <div class="image">
-                <img src="../images/danny.png">
+            <div class="socials-container">
+                <label>Check out my socials</label>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com" class="insta" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.twitter.com" class="tweet" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.pinterest.com" class="pinterest" target="_blank"><i class="fa fa-pinterest"></i></a>
+                    </div>
+            </div>
+            <div class="hire">
+                <a href="##Hire"><button>Hire Me</button></a>
             </div>
         </div>
-
-        <div class="social-media">
-            <button><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i><span>Facebook</span></a></button>
-            <button><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i><span>Instagram</span></a></button>
-            <button><a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i><span>Linkedin</span></a></button>
-            <button><a href="https://www.github.com" target="_blank"><i class="fa fa-github"></i><span>GitHub</span></a></button>
+        <div class="my-picture">
+            <img src="../images/danny.png">
         </div>
-
-
-        <div class="services-wrapper">
-            <div class="services-container">
-
-                <div class="services">
-                    <div class="king">My awesome <span>services</span></div>
-                        <small>
-                            Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem 
-                            ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.
-                            Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-                            ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.
-                        </small> 
-                        <div class="cv">
-                            <button>
-                                <a href="##./assets/Daniel Adepitan Resume.docx"><i class="fa fa-download"><span>Download Resume</span></i></a>
-                            </button>
-                        </div>
-                </div>
-                <div class="web-dev website">
-                    <div class="web-img">
-                        <img src="../images/cityboy.png">
-                    </div>
-                    <div class="head">
-                        <p>Web Development</p>
-                    </div>
-                    <div class="note">
-                        <label>
-                            Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem 
-                            ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-                            lorem ipsum lorem ipsum Lorem ipsum lorem ipsum.
-                        </label>
-                    </div>
-                    <div class="learn">
-                       <button><a href="##">Learn more</a></button>
-                    </div>
-                </div>
-
-            </div>
-            <div class="soft-dev">
-                    <div class="web-dev software">
-                        <div class="web-img">
-                            <img src="../images/dread.png">
-                        </div>
-                        <div class="head">
-                            <p>Software Development</p>
-                        </div>
-                        <div class="note">
-                            <label>
-                                Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem 
-                                ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-                                lorem ipsum lorem ipsum Lorem ipsum lorem ipsum.
-                            </label>
-                        </div>
-                        <div class="learn">
-                           <button><a href="##">Learn more</a></button>
-                        </div>
-                    </div>
-
-                    <div class="web-dev mobile">
-                        <div class="web-img">
-                            <img src="../images/masked.png">
-                        </div>
-                        <div class="head">
-                            <p>Mobile Development</p>
-                        </div>
-                        <div class="note">
-                            <label>
-                                Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem 
-                                ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-                                lorem ipsum lorem ipsum Lorem ipsum lorem ipsum.
-                            </label>
-                        </div>
-                        <div class="learn">
-                            <button><a href="##">Learn more</a></button>
-                        </div>
-                    </div>
-            </div>
-
-        </div>
-
-
-        <div class="footer">
-            <div class="footer-wrapper">
-                <p>RECENT PROJECTS</p>
-                <label>
-                    These are my recent projects, kindly go through them. 
-                </label>
-            </div>
-
-            <div class="foot-container">
-                <div class="card">
-                    <p><span>The Avengers Project<a href="../images/avengers.jpg" target="_blank"><img src="../images/avengers.jpg"></a></span></p>
-                    <p><span>Project Data Breach<a href="../images/databreach.jpg" target="_blank"><img src="../images/databreach.jpg"></a></span></p>
-                    <p><span>Project Dragon M.I.6<a href="../images/dragon.jpg" target="_blank"><img src="../images/dragon.jpg"></a></span></p>
-                    <p><span>Project Halo<a href="../images/halo.png" target="_blank"><img src="../images/halo.png"></a></span></p>
-                    <p><span>Project Prime 001<a href="../images/optimus.jpg" target="_blank"><img src="../images/optimus.jpg"></a></span></p>
-                </div>
-            </div>
-        </div>
-        <footer class="foot">
-            <p>Questions? Call +234-901-862-2571</p>
-            <div class="footer-cols">
-                <ul>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Investor Relations</a></li>
-                    <li><a href="#">Corporate Information</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">Help Center</a></li>
-                    <li><a href="#">Terms Of Use</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">Account</a></li>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Speed Test</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">Media Center</a></li>
-                    <li><a href="#">Cookie Preferences</a></li>
-                    <li><a href="#">Legal Notices</a></li>
-                </ul>
-            </div>
-    
-        </footer>
+    </div>
     </div>
 
+    <!-- social media links -->
+    <a name="social-media-links"></a>
+    <div class="inline-social-links">
+        <ul class="list-inline intro-social-buttons">
+            <li>
+                <a href="https://github.com/Simidaniels" target="_blank" class="btn btn-default btn-lg "><i
+                        class="fa fa-github fa-fw"></i> <span class="network-name">GitHub</span></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/Danny30052381?t=PRX93BXL9-d0VtG619xNXg&s=08" target="_blank"
+                    class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span
+                        class="network-name">Twitter</span></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/simidaniels1" target="_blank" class="btn btn-default btn-lg"><i
+                        class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/SimiDaniels05" target="_blank" class="btn btn-default btn-lg"><i
+                        class="fa fa-linkedin fa-fw"></i> <span class="network-name">LinkedIn</span></a>
+            </li>
+            <li>
+                <a href="https://www.freecodecamp.com/Simidaniels" target="_blank" class="btn btn-default btn-lg"><i
+                        class="fa fa-free-code-camp fa-fw"></i> <span class="network-name">FreeCodeCamp</span></a>
+            </li>
+            
+        </ul>
+    </div>
+
+    <a  name="services-card"></a>
+    <div class="my-services-wrapper">
+        <div class="right-side-services">
+            <div class="service-text-content">
+                <div class="brief-content">
+                    <h1>My Awesome <span>Services</span></h1>
+                    <small>
+                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+                        ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.
+                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+                        ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.
+                    </small>
+                </div>
+                <div class="resume">
+                    <button>
+                        <a href="../docs/Resume.docx"><span>Download Resume</span> 
+                            <i class="fa fa-download"></i></a>
+                    </button>
+                </div>
+            </div>
+            <!-- first card -->
+            <div class="service-card website">
+                <div class="service-card-emoji">
+                    <img src="../images/cityboy.png">
+                </div>
+                <h2>Web Development</h2>
+                    <label class="service-card-context">
+                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+                        ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                        lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum.
+                    </label>
+                <div class="discover">
+                    <button class="btn-1 icon-forward"><span><a href="##">Learn more</a></span></button>
+                </div>
+            </div>
+            <!--end of first card -->
+        </div>
+        
+        <div class="left-side-services">
+            <!-- second card -->
+            <div class="service-card software">
+                <div class="service-card-emoji">
+                    <img src="../images/dread.png">
+                </div>
+                <h2>Software Development</h2>
+                
+                    <label class="service-card-context">
+                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+                        ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                        lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum.
+                    </label>
+                
+                <div class="discover">
+                    <button class="btn-1 icon-forward"><span><a href="##">Learn more</a></span></button>
+                </div>
+            </div>
+            <!--end of second card -->
+
+            <!-- third card -->
+            <div class="service-card mobile">
+                <div class="service-card-emoji">
+                    <img src="../images/masked.png">
+                </div>
+                <h2>Mobile Development</h2>
+                
+                    <label class="service-card-context">
+                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+                        ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                        lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum.
+                    </label>
+                
+                <div class="discover">
+                    <button class="btn-1 icon-forward"><span><a href="##">Learn more</a></span></button>
+                </div>
+            </div>
+            <!--end of third card -->
+        </div>
+    </div>
+
+    <a name="portfolio"></a>
+    <section id="portfolio" class="bg-light-gray bounds">
+        <!---The ID here is been used is the CSS-->
+            <div class="row3">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading2">Awesomeness Profile.</h2>
+                    <h3 id="below-section" class="section-subheading text-muted">Below you'll find some of my recent work.
+                    </h3>
+                </div>
+            </div>
+            <!-- Portfolio img1 -->
+            <div class="row4">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="../assets/Netlixindex.html" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <img src="../img/netflix.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Netflix Clone</h4>
+                        <p id="small-text" class="text-muted">HTML, CSS and Javascript</p>
+                    </div>
+                </div>
+                <!-- End of Portfolio img1 -->
+                <!-- Portfolio img2 -->
+                <div class="col-md-4 col-sm-6 portfolio-item portfolio2">
+                    <a href="/index.html" class="portfolio-link" target="_blank" data-toggle="modal">
+                        <img src="../img/portfolio.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>My Portfolio</h4>
+                        <p id="small-text" class="text-muted">HTML, CSS and Javascript</p>
+                    </div>
+                </div>
+                <!-- End of Portfolio img2 -->
+                <!-- Portfolio img3 -->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="../assets/calculatorindex.html" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <img src="../img/calculator.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>IPhone Calculator</h4>
+                        <p id="small-text" class="text-muted">HTML, CSS and Javascript</p>
+                    </div>
+                </div>
+                <!--End of Portfolio img3 -->
+                <!-- Portfolio img4 -->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="../assets/giftcardindex.html" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <img src="../img/trade.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Gift Card Trading Website</h4>
+                        <p id="small-text" class="text-muted">HTML, CSS and Javascript</p>
+                    </div>
+                </div>
+                <!-- End of Portfolio img4 -->
+                <!-- Portfolio img5 -->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="../assets/loginindex.html" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <img src="../img/login.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Sign-Up Form</h4>
+                        <p id="small-text" class="text-muted">HTML, CSS and Javascript</p>
+                    </div>
+                </div>
+                <!-- End of Portfolio img5 -->
+                <!-- Portfolio img6 -->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="../assets/analogindex.html" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <img src="../img/clock.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Analog Clock</h4>
+                        <p id="small-text" class="text-muted">HTML, CSS and Javascript</p>
+                    </div>
+                </div>
+                <!-- End of Portfolio img6 -->
+            </div>
+    </section>
+
+    <a name="footer"></a>
+    <footer>
+        <div class="container">
+            <div class="row5">
+                <div class="col-lg-12">
+                    <ul class="footer-inline-list">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#portfolio">Profile</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                    </ul>
+                    <p class="copyright text-muted small">Copyright&copy; Infinite Web Design Studio 2022. All Rights
+                        Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <div>
+        <label class="toggler-wrapper style-1">
+            <input type="checkbox" id="theme-switcher">
+            <div class="toggler-slider">
+                <div class="toggler-knob"></div>
+            </div>
+        </label>
+    </div>
 
     <script src="../script/profilescript.js"></script>
 </body>
