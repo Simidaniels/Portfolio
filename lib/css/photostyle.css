@@ -1,0 +1,12 @@
+.name {
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+}
+img {
+    width: 20vw;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid green;
+    background: rgb(221, 164, 164);
+}

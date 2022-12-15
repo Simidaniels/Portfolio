@@ -1,3 +1,6 @@
+html, body {
+    scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
@@ -107,21 +110,27 @@ input[type=checkbox] {
     transform: translate(-50%, -50%);
     
 }
-.content-container {
-    
-}
 .full-name h2 {
     font-size: 32px;
     font-weight: 400;
 }
 .full-name small {
+    font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     color: rgba(102, 102, 102, 0.713);
 }
 .status .about {
     font-size: 18px;
     font-weight: 300;
+    padding-top: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: inline-block;
+}
+.about2 {
+    font-size: 18px;
+        font-weight: 300;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: inline-block;
 }
 .status .about a {
     text-decoration: none;
@@ -152,8 +161,16 @@ input[type=checkbox] {
 }
 .social-icons a:hover {
     color: #fff;
-    background-color: #000;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.social-icons .insta:hover {
+    background-color: #8f3ac0;
+}
+.social-icons .tweet:hover {
+    background-color: #1d9bf0;
+}
+.social-icons .pinterest:hover {
+    background-color: #E60023;
 }
 .hire {
     display: inline-block;
@@ -326,6 +343,7 @@ input[type=checkbox] {
     color: #000;
 }
 .service-card-context {
+    font-family: serif;
     color: #000;
     text-align: center;
     margin: 0 50px;
@@ -547,45 +565,7 @@ p.copyright {
     color: #ccc;
     transition: 0.4s ease-in-out;
 }
-.toggler-wrapper input[type="checkbox"] {
-    display: none;
 
-}
-
-.toggler-wrapper input[type="checkbox"]:checked+.toggler-slider {
-    background-color: #44cc66;
-}
-
-.toggler-wrapper .toggler-slider {
-    background-color: rgb(93, 93, 93);
-    position: absolute;
-    border-radius: 20px;
-    top: 30px;
-    left: 50%;
-    width: 40px;
-    height: 25px;
-    -webkit-transition: all 300ms ease;
-    transition: all 300ms ease;
-}
-
-.toggler-wrapper .toggler-knob {
-    position: absolute;
-    -webkit-transition: all 300ms ease;
-    transition: all 300ms ease;
-}
-
-.toggler-wrapper.style-1 input[type="checkbox"]:checked+.toggler-slider .toggler-knob {
-    left: calc(100% - 19px - 3px);
-}
-
-.toggler-wrapper.style-1 .toggler-knob {
-    width: calc(25px - 6px);
-    height: calc(25px - 6px);
-    border-radius: 50%;
-    left: 3px;
-    top: 3px;
-    background-color: #fff;
-}
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -597,4 +577,21 @@ p.copyright {
 ::-webkit-scrollbar-thumb {
     background: rgb(219, 152, 29);
     border-radius: 20px;
+}
+.switch-cont {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.switch-cont .switch-btn {
+    font-family: monospace;
+    text-transform: uppercase;
+    outline: none;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all ease 0.3s;
 }
