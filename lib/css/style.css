@@ -99,6 +99,7 @@ input[type=checkbox] {
         text-align: center;
         padding: 16px 0;
         margin: 14px 0;
+        z-index: 1000;
     }
     .logo {
         font-size: 25px;
@@ -114,20 +115,72 @@ input[type=checkbox] {
     input[type=checkbox]:checked~.menu {
         display: block;
     }
-    .hamburger {
-        display: block;
+    /* .nav-links .menu {
+        display: none;
+        position: absolute;
+        background-color: rgb(94, 94, 94);
+        right: 0;
+        left: 0;
+        text-align: center;
+        z-index: 1000;
+    } */
+    .nav-links .menu-icon {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        padding: 40px 20px;
     }
-    .hamburger:active {
-        transform: rotate(360deg);
-        transition: 0.6s ease;
+    .nav-links .menu-icon .nav-icon {
+        background: #000000;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: .2s ease-out;
+        width: 1.5rem;
+    }
+    .nav-links .menu-icon .nav-icon:before,
+    .nav-links .menu-icon .nav-icon:after {
+        background: #000000;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 1.5rem;
+    }
+    .nav-links .menu-icon .nav-icon:before {
+        top: 5px;
+    }
+    .nav-links .menu-icon .nav-icon:after {
+        top: -5px;
+    }
+    .nav-links .menu-btn {
+        display: none;
+    }
+    .nav-links .menu-btn:checked~.menu {
+        height: 400px;
+        overflow: hidden;
+    }
+    .nav-links .menu-btn:checked~.menu-icon .nav-icon {
+        background: transparent;
+    }
+    .nav-links .menu-btn:checked~.menu-icon .nav-icon:before {
+        transform: rotate(-45deg);
+    }
+    .nav-links .menu-btn:checked~.menu-icon .nav-icon:after {
+        transform: rotate(45deg);
+    }
+    .nav-links .menu-btn:checked~.menu-icon:not(.steps) .nav-icon:before,
+    .nav-links .menu-btn:checked~.menu-icon:not(.steps) .nav-icon:after {
+        top: 0;
     }
     .dropdown {
         left: 50%;
-        top: 30px;
+        top: 0%;
         transform: translateX(35%);
     }
     .dropdown li:hover {
-        background-color: #4c9e9e;
+        background: none;
     }
 }
 .intro-header {
@@ -481,6 +534,4 @@ p.copyright {
     background: rgba(0, 131, 131, 0.925);
     border-radius: 20px;
 }
-
-
 /* I literally need to change my hamburger menu to the correct one*/

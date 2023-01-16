@@ -14,13 +14,18 @@
     <nav class="navbar">
         <div class="logo"> <i class="fa fa-laptop"></i> SimiDaniels</div>
         <ul class="nav-links">
-            <input type="checkbox" id="checkbox_toggle" />
-            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
             <div class="menu">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="#About">About</a></li>
                 <li class="services">
-                    <a href="#Portfolio">Portfolio &DownArrow;</a>
+                    <a href="#Portfolio">portfolio
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0  0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round" class="arrow-down" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
                         <ul class="dropdown">
                             <li><a href="./lib/docs/Resume.docx"><i class="fa fa-download"></i> Resume</a></li>
                             <li><a href="#Certificates">Certificates</a></li>
