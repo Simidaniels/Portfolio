@@ -17,9 +17,9 @@
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
             <div class="menu">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li class="services">
+                <li class="lists"><a href="./index.html">Home</a></li>
+                <li class="lists"><a href="#About">About</a></li>
+                <li class="services lists">
                     <a href="#Portfolio">portfolio
                         <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0  0 24 24" stroke-linecap="round"
                             stroke-linejoin="round" class="arrow-down" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +34,7 @@
                             <li><a href="#Awards">Awards</a></li>
                         </ul> 
                 </li>
-                <li><a href="#Contact">Contact</a></li>
+                <li class="lists"><a href="#Contact">Contact</a></li>
             </div>
         </ul>
     </nav>
@@ -164,12 +164,12 @@
                 <!--End of Portfolio img3 -->
                 <!-- Portfolio img4 -->
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="./lib/assets/giftcardindex.html" target="_blank" class="portfolio-link" data-toggle="modal">
-                        <img src="./lib/img/trade.jpg"
+                    <a href="./lib/assets/designBrooksindex.html" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <img src="./lib/img/designbrooks.jpg"
                             class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Gift Card Trading Website</h4>
+                        <h4>Architectural Website</h4>
                         <p id="small-text" class="text-muted">HTML, CSS and Javascript</p>
                     </div>
                 </div>
@@ -202,85 +202,145 @@
         </div>
     </section>
 
-    <a name="contact"></a>
-    <div class="banner">
-        <div class="bg-overlay4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h2 class="connect">Check out all my socials</h2>
+    <a name="comments area"></a>
+    <div class="comments-area">
+        <div id="comments">
+            <div id="respond" class="comment-respond">
+                <h3 id="reply-title" class="comment-reply-title">Leave a Comment</h3>
+
+                    <p class="comment-form-comment">
+                        <label for="comment" class="screen-reader-text">Comment</label>
+                        <textarea
+                            id="comment" name="comment" cols="45" rows="8" required="" data-gram="false"
+                            wt-ignore-input="true">
+                        </textarea>
+                    </p>
+
+                    <label for="author" class="screen-reader-text">Name</label>
+                        <input placeholder="Name*" id="author" name="author"
+                            type="text" value="" size="30" required="">
+
+
+                    <label for="email" class="screen-reader-text">Email</label>
+                        <input placeholder="Email *" id="email"
+                            name="email" type="email" value="" size="30" required="">
+                            
+
+                    <label for="url" class="screen-reader-text">Website</label>
+                        <input placeholder="Website" id="url"
+                            name="url" type="url" value="" size="30">
+
+
+                    
+                    <p class="form-submit">
+                        <input name="submit" type="submit" id="submit" class="submit"
+                            value="Post Comment">
+                                <input type="hidden" name="comment_post_ID" value="188"
+                                    id="comment_post_ID">
+                                        <input type="hidden" name="comment_parent" id="comment_parent" value="0">
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-widgets-container grid-container">
+        <div class="inside-footer-widgets">
+            <div class="footer-widget-1">
+            
+                <aside id="custom_html-3" class="widget_text widget inner-padding      widget_custom_html">
+                    <div class="textwidget custom-html-widget">
+                        <h2 class="text-widget-header">
+                            SimiDaniels Code
+                        </h2>
+                        <p class="custom-html-widget-note">
+                            Hey, I am Daniel. I share Frontend Web Development projects and        free source code. Thank you,
+                            visit again :)</p>
+                        <p>
+                            <i class="fa fa-envelope-o fa-fw"></i>
+                            <a href="mailto:simidaniels0506@gmail.com"     class="widget-mail">simidaniels0506@gmail.com</a>
+                        </p>
+                        <p>
+                            <small>Read more</small>
+                            <strong>
+                                <a href="##">About me</a>
+                            </strong>.
+                        </p>
+                            <a class="footer_icon instagram" href="https://www.instagram.com/      simidaniels1" target="_blank">
+                                <i class="fa fa-instagram fa-fw"></i>
+                            </a>
+                            <a class="footer_icon linkedin" href="https://www.linkedin.com/in/     SimiDaniels05" target="_blank">
+                                <i class="fa fa-linkedin fa-fw"></i>
+                            </a>
+                            <a class="footer_icon twitter" href="https://twitter.com/      Danny30052381?t=PRX93BXL9-d0VtG619xNXg&s=08" target="_blank">
+                                <i class="fa fa-twitter fa-fw"></i>
+                            </a>
+                            <a class="footer_icon github" href="https://github.com/    Simidaniels" target="_blank">
+                                <i class="fa fa-github fa-fw"></i>
+                            </a>
                     </div>
-                    </br>
-                    <div class="col-lg-6">
-                        <ul class="list-inline banner-social-buttons">
-                            <li>
-                                <a href="https://www.facebook.com/your.simidaniels" target="_blank"
-                                    class="btn btn-default btn-lg"><i class="fa fa-facebook     fa-fw"></i> <span
-                                        class="network-name">Facebook</span></a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/Danny30052381?t=PRX93BXL9-d0VtG619xNXg&s=08" target="_blank"
-                                    class="btn btn-default btn-lg"><i class="fa fa-twitter  fa-fw"></i> <span
-                                        class="network-name">Twitter</span></a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/simidaniels1" target="_blank" class="btn btn-default btn-lg"><i  class="fa fa-instagram fa-fw"></i> <span
-                                        class="network-name">Instagram</span></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/Simidaniels" target="_blank"
-                                    class="btn btn-default btn-lg "><i class="fa fa-github  fa-fw"></i> <span
-                                        class="network-name">Github</span></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/SimiDaniels05" target="_blank"
-                                    class="btn btn-default btn-lg"><i class="fa fa-linkedin     fa-fw"></i> <span
-                                        class="network-name">Linkedin</span></a>
-                            </li>  
-                            <li>
-                                <a href="https://www.freecodecamp.com/Simidaniels" target="_blank"
-                                    class="btn btn-default btn-lg"><i class="fa fa-free-code-camp   fa-fw"></i> <span
-                                        class="network-name">freeCodeCamp</span></a>
-                            </li>
+                </aside>
+            
+                <aside id="nav_menu-3" class="widget inner-padding widget_nav_menu">
+                    <h2 class="widget-title">Important Pages</h2>
+                    <div class="menu-footermenu-container">
+                        <ul id="menu-footermenu" class="menu-prototype">
+                            <li id="menu-item-82"
+                                class="menu-item menu-item-type-post_type      menu-item-object-page menu-item-82"><a
+                                    href="##">About Us</a></li>
+                            <li id="menu-item-83"
+                                class="menu-item menu-item-type-post_type      menu-item-object-page menu-item-83"><a
+                                    href="##">Contact Us</a></li>
+                            <li id="menu-item-84"
+                                class="menu-item menu-item-type-post_type      menu-item-object-page menu-item-84"><a
+                                    href="##">Disclaimer</a></li>
+                            <li id="menu-item-85"
+                                class="menu-item menu-item-type-post_type      menu-item-object-page menu-item-85"><a
+                                    href="##">Privacy Policy</a></li>
+                            <li id="menu-item-86"
+                                class="menu-item menu-item-type-post_type      menu-item-object-page menu-item-86"><a
+                                    href="##">Terms and Conditions</a></li>
+                            <li id="menu-item-81"
+                                class="menu-item menu-item-type-custom menu-item-object-custom     menu-item-home menu-item-81">
+                                <a href="./index.html">Home</a></li>
                         </ul>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <!-- Footer -->
-    <a name="footer"></a>
-    <footer>
-        <div class="container">
-            <div class="row5">
-                <div class="col-lg-12">
-                    <ul class="footer-inline-list">
-                        <li>
-                            <a href="#">Home</a>
+                </aside>
+            
+                <aside id="recent-posts-5" class="widget inner-padding widget_recent_entries">
+                    <h2 class="widget-title">Recent Posts</h2>
+                    <ul id="menu-footermenu" class="menu-prototype">
+                        <li class="menu-item"><i class="fa fa-arrow-right fa-fw"></i>
+                            <a href="##">Create an “Add To Cart Button”
+                                Using Html and Css</a>
                         </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#about">About</a>
+                        <li class="menu-item"><i class="fa fa-arrow-right fa-fw"></i>
+                            <a href="##">Create
+                                Quiz App Using Html,Css and JavaScript (Source Code)</a>
                         </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#portfolio">Portfolio</a>
+                        <li class="menu-item"><i class="fa fa-arrow-right fa-fw"></i>
+                            <a href="##">Create Slideshow Using Html ,Css and
+                                JavaScript (Source Code)</a>
                         </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#contact">Contact</a>
+                        <li class="menu-item"><i class="fa fa-arrow-right fa-fw"></i>
+                            <a href="##" aria-current="page">Restaurant Website Using Html And     Css</a>
+                        </li>
+                        <li class="menu-item"><i class="fa fa-arrow-right fa-fw"></i>
+                            <a href="##">Otp Input Field Using HTML and
+                                CSS</a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted small">Copyright&copy; Infinite Web Design Studio 2022. All Rights
-                        Reserved</p>
-                </div>
+                </aside>
             </div>
+                <hr class="footer-divider-copyright">
+                <p class="copyright text-muted small">Copyright&copy; Infinite Web Design      Studio 2023. All          Rights
+                    Reserved</p>
         </div>
-    </footer>
+    </div>
 
-    <script src="./lib/script/main.js"></script>  
+
+    <script src="./lib/script/main.js"></script>
+
 </body>
 </html>.
 
