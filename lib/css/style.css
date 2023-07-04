@@ -89,6 +89,11 @@ input[type=checkbox] {
     padding: 0 6px;
     color: rgb(46, 46, 46);
 }
+/* .arrow-down {
+    display: flex;
+    justify-content: center;            //uncommitted.
+    align-items: center;
+} */
 @media (max-width: 768px) {
     .menu {
         display: none;
